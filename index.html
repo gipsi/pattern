@@ -5,12 +5,45 @@
 
 <title>Pattern</title>
 
+<!-- For responsive design make sure you have the correct <meta> tag inside the <head> tag. -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<style>
-</style>
+<!-- Second CSS W3C core stylesheet on 19.09.2019 -->
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Ultramarine" type="text/css">
 
+<!--
+    
+<style>
+  /*  First CSS coded 14.09.2019 */
+6 css tips https://dev.to/canderson93/6-tips-for-making-a-responsive-website-from-scratch-4427
+  
+body * + * {
+  /* -Lobotomised owl- Puts a margin between all of your elements.*/
+  margin-top: 1.5rem;
+  font-size: calc(1em + 1vw);
+  /* lets your font scale with viewport size without ever going below 1em on tiny devices.*/
+}
+h1 { 
+  color: white; 
+  background-color: black; 
+} 
+section {
+    width: 100vw;
+    max-width: 100ch;
+
+    margin: 0 auto;
+    padding: 1.5em 1em;
+}
+pre {
+  padding: 0.5em 1em;
+  overflow-x: auto;
+  background-color: var(--c-code-block-background);
+  border-radius: 0.5em;
+}
+
+</style>
+-->
 </head>
 
 <body>
@@ -34,7 +67,7 @@
 	 
   <hr> 
 	 
-	 
+
   <p>2<sup>nd</sup> poem.</p> 
   
   <h6>Hamlet by Walter de la Mare</h6> 
@@ -59,13 +92,27 @@
       Of cloud took sky and stars with majesty,
       He rose, his face a parchment of old age,
       Sorrow hath scribbled o'er, and o'er, and o'er.</p></pre>
+ 
    <!--
    <p>Character code for a fraction - &frac12; or &#189;</p>
    <p>Character code for copy - &copy; or &#169;</p>
    <a href="https://www.google.com/search?q=html+character+codes&cad=h" target="_blank">Character Codes</a>
    -->
-	
-    <p><b>Shoutout</b> to Ryans Tutorials for guidance on how to write clean elegant readable markup 
-    <a href="https://ryanstutorials.net/html-tutorial/" target="_blank">HTML Tutorial</a></p>
+   <p><b>Shoutouts:</b><br>
+    <ul>
+   <li>Inspiration for this project started with Brad Frost's short course with Gymnasium
+   <a href="https://www.credential.net/yub37jcw#.XXloYFWgMW0.twitter" target="_blank">(Badge!)</a><br>
+    Working with Atomic Design and Pattern Lab (11.09.2019)</li><br> 
+    <li>Ryans Tutorials for a guidance on how to write clean elegant readable markup 
+   <a href="https://ryanstutorials.net/html-tutorial/" target="_blank">HTML Tutorial</a> (14.09.2019)</li><br>
+   <li>Learning CSS 
+   <a href="https://www.w3.org/Style/CSS/learning" target="_blank">W3C</a> (17.09.2019)</li><br>
+   <li>Videos and slides from 3 days of UI special in Amsterdam
+   <a href="https://cssday.nl/2019" target="_blank">CSS Day</a> (18.09.2019)</li><br>
+   <li>Planning new learning path 
+   <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">MDN web docs</a>
+   (including tools checklist and setup Python server on localhost:8000) (19.09.2019)</li><br>
+    </ul>
+   </p>
 </body>
 </html>
