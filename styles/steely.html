@@ -1,0 +1,208 @@
+<!Doctype HTML>
+<html lang="en">
+<!-- Pattern of Html -->
+<head>
+
+<title>gipsi-pattern-steely</title>
+
+<!-- For responsive design make sure you have the correct <meta> tag inside the <head> tag. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!--W3C list of nine Core stylesheets -->
+<!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/" type="text/css">-->
+<!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Oldstyle" type="text/css">--> 
+<!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Modernist" type="text/css">-->
+<!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Midnight" type="text/css">-->
+<!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Ultramarine" type="text/css">-->
+<!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Swiss" type="text/css">-->
+<!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Chocolate" type="text/css">-->
+<!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Traditional" type="text/css">-->
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Steely" type="text/css">
+
+<!-- css component https://codepen.io/heydon/pen/vmKVJK -->
+<style>
+* {
+  font-size: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+html {
+  font-size: 120%;
+  font-family: sans-serif;
+  margin: 1rem;
+}
+
+.vh { 
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+[data-menu-component] {
+  position: relative;
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+}
+
+[role="menu"] ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+[data-opens-menu], [role="menu"] a {
+  line-height: 1;
+  text-align: left;
+  background: black;
+  border: 0;
+  color: #fff;
+  padding: 0.33rem 0.5rem; 
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+[type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
+  outline: none;
+  background: darkBlue;
+}
+
+:checked + label .expanded-text {
+  display: inline;
+}
+
+:checked + label .collapsed-text {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label .expanded-text {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label .collapsed-text {
+  display: inline;
+}
+
+[role="menu"] {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+:checked ~ [role="menu"] {
+  display: block;
+}
+
+[data-menu-origin="right"] {
+  left: auto;
+  right: 0;
+}
+
+[role="menu"] a {
+  display: block;
+  min-width: 100%;
+  margin-top: 0.125rem;
+  white-space: nowrap;
+}
+</style>
+</head>
+<header>
+
+<!-- Menu component -->		
+  <div data-menu-component>
+  <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
+  
+  <label for="toggle" data-opens-menu>
+    &#x2630; Styles Menu
+    <span class="vh expanded-text">expanded</span>
+    <span class="vh collapsed-text">collapsed</span>
+  </label>
+  
+  <div role="menu" data-menu-origin="left">
+    <ul>
+      <!--<li><a href="index.html">Index</a></li>-->
+      <li><a href="core.html">Core</a></li>
+      <li><a href="oldstyle.html">Oldstyle</a></li>
+	  <li><a href="modernist.html">Modernist</a></li>
+      <li><a href="midnight.html">Midnight</a></li>
+      <li><a href="ultramarine.html">Ultramarine</a></li>
+	  <li><a href="swiss.html">Swiss</a></li>
+      <li><a href="chocolate.html">Chocolate</a></li>
+      <li><a href="traditional.html">Traditional</a></li>
+	  <li><a href="steely.html">Steely</a></li>
+    </ul>
+  </div>
+</div>		
+<br>
+ <h1>Pattern</h1>
+ <h2>Using hypertext and styles for dynamic content. </h2>
+
+</header>
+<hr>
+<body>
+
+  <h4>Smatterers by Samuel Butler</h4>
+  
+     All smatterers are more brisk and pert<br>
+     Than those that understand an art;<br>
+     As little sparkles shine more bright<br>
+     Than glowing coals, that give them light.</p>
+<hr>	  
+  <h4>Hamlet by Walter de la Mare</h4> 
+  
+  <p><pre><u>Umbrageous cedars</u> murmuring symphonies
+      Stooped in late twilight o'er <sub>dark Denmark's Prince:</sub>
+      He sat, his eyes companioned with dream -
+      <b>Lustrous <u>large</b> eyes</u> that <b>held the world in view</b>
+      As some entranc&#232d child's a puppet show.
+      Darkness gave birth to the all-trembling stars,
+      And a far roar of long-drawn cataracts,
+      Flooding <b><u>immeasurable night</u></b> with sound.
+      He sat so still, his very thoughts took wing,
+      And, lightest Ariels, the stillness haunted
+      With midge-like measures; but, at last, even they
+      Sank 'neath the influences of his night.
+      <i>The sweet dust shed faint perfume in the gloom;</i>
+      Through all wild space the stars' bright arrows fell
+      On the lone Prince <b>- the troubled son of man -</b>
+      On <u>Time's dark waters</u> in unearthly trouble:
+      Then, as the roar increased, and one fair tower
+      Of cloud took sky and stars with majesty,
+      He rose, his face a parchment of old age,
+      Sorrow hath scribbled o'er, and o'er, and o'er.</p></pre>
+ <hr>
+   <p><b>Shoutouts:</b><br>
+    <ul>
+   <li>Inspiration for this project started with Brad Frost's short course with Gymnasium
+   <a href="https://www.credential.net/yub37jcw#.XXloYFWgMW0.twitter" target="_blank">(Badge!)</a><br>
+    Working with Atomic Design and Pattern Lab (11.09.2019)</li><br> 
+    <li>Ryans Tutorials for a guidance on how to write clean elegant readable markup 
+   <a href="https://ryanstutorials.net/html-tutorial/" target="_blank">HTML Tutorial</a> (14.09.2019)</li><br>
+   <li>Learning CSS 
+   <a href="https://www.w3.org/Style/CSS/learning" target="_blank">W3C</a> (17.09.2019)</li><br>
+   <li>Videos and slides from 3 days of UI special in Amsterdam
+   <a href="https://cssday.nl/2019" target="_blank">CSS Day</a> (18.09.2019)</li><br>
+   <li>Planning new learning path 
+   <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">MDN web docs</a>
+   including tools checklist and setup Python server on localhost:8000 (19.09.2019)</li><br>
+   <li>Alternative stylesheet
+    <a href="swiss.html" target="_blank">Swiss style</a>
+    VS Code and Firefox developer edition. (20.09.2019)</li><br>
+    <li>The truth is, design work is <i>deliberation</i>.  It's the pursuit of the best solution to a given problem. 
+    <a href="https://www.amazon.co.uk/Inclusive-Design-Patterns-Heydon-Pickering-ebook/dp/B01MAXK8XR" target="_blank">Inclusive Design Patterns</a> Heydon-Pickering-ebook (22.09.2019) 
+    </li>
+    </ul>
+   </p>
+</body>
+<hr>
+<footer><a href="https://glitch.com/~gipsi-pattern" target="_blank">gipsi-pattern</a> is a web development project maintained and hosted on <a href="https://github.com/about" target="_blank">GitHub</a> and <a href="https://glitch.com" target="_blank">Glitch</a></footer>
+
+</html>
