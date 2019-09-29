@@ -64,7 +64,7 @@ label {
 [data-opens-menu], [role="menu"] a {
   line-height: 1;
   text-align: left;
-  background: black;
+  background: #93c;
   border: 0;
   color: #fff;
   padding: 0.33rem 0.5rem; 
@@ -74,7 +74,7 @@ label {
 
 [type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
   outline: none;
-  background: darkBlue;
+  background: #3333FF;
 }
 
 :checked + label .expanded-text {
@@ -114,12 +114,32 @@ label {
   margin-top: 0.125rem;
   white-space: nowrap;
 }
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+blockquote {
+  padding: 4%;
+  border: 5px double #93c;
+    box-shadow: 
+     inset 0 -1em 1em rgba(0,0,0,0.1), 
+           0 0  0 2px rgb(255,255,255),
+           0.3em 0.3em 1em rgba(0,0,0,0.3);
+  font-size: 16px;		
+}
+
+footer {
+  padding: 2%;
+}
 </style>
 </head>
 <header>
 
 <!-- Menu component -->		
-  <div data-menu-component>
+  <nav data-menu-component>
   <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
   
   <label for="toggle" data-opens-menu>
@@ -131,8 +151,9 @@ label {
   <div role="menu" data-menu-origin="left">
     <ul>
       <!--<li><a href="index.html">Index</a></li>-->
+	  <li><a href="dark.html">Dark</a></li>
       <li><a href="core.html">Core</a></li>
-      <li><a href="oldstyle.html">Oldstyle</a></li>
+      <li><a href="styles/oldstyle.html">Oldstyle ✔ </a></li>
 	  <li><a href="modernist.html">Modernist</a></li>
       <li><a href="midnight.html">Midnight</a></li>
       <li><a href="ultramarine.html">Ultramarine</a></li>
@@ -142,46 +163,25 @@ label {
 	  <li><a href="steely.html">Steely</a></li>
     </ul>
   </div>
-</div>		
+</nav>		
 <br>
  <h1>Pattern</h1>
  <h2>Using hypertext and styles for dynamic content. </h2>
-
+<br>  
 </header>
 <hr>
 <body>
-
+<a href="https://archive.org/details/genuinepoetical00butlgoog/page/n12?autoplay=1&playset=1">
+<blockquote>
   <h4>Smatterers by Samuel Butler</h4>
-  
-     All smatterers are more brisk and pert<br>
+  <q>
+  All smatterers are more brisk and pert<br>
      Than those that understand an art;<br>
      As little sparkles shine more bright<br>
-     Than glowing coals, that give them light.</p>
-<hr>	  
-  <h4>Hamlet by Walter de la Mare</h4> 
-  
-  <p><pre><u>Umbrageous cedars</u> murmuring symphonies
-      Stooped in late twilight o'er <sub>dark Denmark's Prince:</sub>
-      He sat, his eyes companioned with dream -
-      <b>Lustrous <u>large</b> eyes</u> that <b>held the world in view</b>
-      As some entranc&#232d child's a puppet show.
-      Darkness gave birth to the all-trembling stars,
-      And a far roar of long-drawn cataracts,
-      Flooding <b><u>immeasurable night</u></b> with sound.
-      He sat so still, his very thoughts took wing,
-      And, lightest Ariels, the stillness haunted
-      With midge-like measures; but, at last, even they
-      Sank 'neath the influences of his night.
-      <i>The sweet dust shed faint perfume in the gloom;</i>
-      Through all wild space the stars' bright arrows fell
-      On the lone Prince <b>- the troubled son of man -</b>
-      On <u>Time's dark waters</u> in unearthly trouble:
-      Then, as the roar increased, and one fair tower
-      Of cloud took sky and stars with majesty,
-      He rose, his face a parchment of old age,
-      Sorrow hath scribbled o'er, and o'er, and o'er.</p></pre>
- <hr>
-   <p><b>Shoutouts:</b><br>
+     Than glowing coals, that give them light
+  </q>
+</blockquote></a>
+<br>
     <ul>
    <li>Inspiration for this project started with Brad Frost's short course with Gymnasium
    <a href="https://www.credential.net/yub37jcw#.XXloYFWgMW0.twitter" target="_blank">(Badge!)</a><br>
@@ -203,8 +203,36 @@ label {
     </li>
     </ul>
    </p>
+ <br>
+   <p>
+   <blockquote>	  
+  <h4>Hamlet by Walter de la Mare</h4> 
+  
+  <q><u>Umbrageous cedars</u> murmuring symphonies<br>
+      Stooped in late twilight o'er <sub>dark Denmark's Prince:</sub><br>
+      He sat, his eyes companioned with dream -<br>
+      <b>Lustrous <u>large</b> eyes</u> that <b>held the world in view</b><br>
+      As some entranc&#232d child's a puppet show.<br>
+      Darkness gave birth to the all-trembling stars,<br>
+      And a far roar of long-drawn cataracts,<br>
+      Flooding <b><u>immeasurable night</u></b> with sound.<br>
+      He sat so still, his very thoughts took wing,<br>
+      And, lightest Ariels, the stillness haunted<br>
+      With midge-like measures; but, at last, even they<br>
+      Sank 'neath the influences of his night.<br>
+      <i>The sweet dust shed faint perfume in the gloom;</i><br>
+      Through all wild space the stars' bright arrows fell<br>
+      On the lone Prince <b>- the troubled son of man -</b><br>
+      On <u>Time's dark waters</u> in unearthly trouble:<br>
+      Then, as the roar increased, and one fair tower<br>
+      Of cloud took sky and stars with majesty,<br>
+      He rose, his face a parchment of old age,<br>
+      Sorrow hath scribbled o'er, and o'er, and o'er.</q><br>
+ 
+ </blockquote>
+ </p>
 </body>
-<hr>
+<br>
 <footer><a href="https://glitch.com/~gipsi-pattern" target="_blank">gipsi-pattern</a> is a web development project maintained and hosted on <a href="https://github.com/about" target="_blank">GitHub</a> and <a href="https://glitch.com" target="_blank">Glitch</a></footer>
 
 </html>
