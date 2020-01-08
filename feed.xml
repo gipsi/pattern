@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <rss version="2.0">
+	    
+    <channel>
+	
+    <title>Website RSS Feed</title>
+    <description>Website Feed coded manually</description>
+    <link>https://gipsi.github.io/pattern/</link>
+		
+		<item>
+			<title>Sale this week only</title>
+			<description>All household products are 50% off this week only</description>
+			<link>https://gipsi.github.io/pattern//sales.htm</link>
+		</item>
+
+	
+        <item>
+            <title>Announcing new Products</title>
+            <description>Announcing a new line of coded products</description>
+            <link>https://gipsi.github.io/pattern/products.html</link>
+        </item>
+        
+        
+		<item>
+			<title>A Special Event</title>
+			<description>A Special Teleconference for our customers about our products</description>
+			<link>https://gipsi.github.io/pattern//events.htm</link>
+		</item>
+
+
+    </channel>
+
+</rss>
