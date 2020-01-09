@@ -8,9 +8,8 @@
 <!-- For responsive design make sure you have the correct <meta> tag inside the <head> tag. -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<!-- Rss Feed info -->	
-<link rel="alternate" type="application/rss+xml" title="Subscribe to What's New" href="feed.xml" />	
-
+<!-- rss info: https://www.lifewire.com/how-to-add-rss-feed-3469294 -->
+<link rel="alternate" type="application/rss+xml" title="Subscribe to What's New" href="feed.xml" />
 
 <!--W3C list of nine Core stylesheets -->
 <!--<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/" type="text/css">-->
@@ -25,6 +24,7 @@
 
 
 <!-- css component https://codepen.io/heydon/pen/vmKVJK -->
+
 <style>
 * {
   font-size: inherit;
@@ -136,11 +136,19 @@ blockquote {
 footer {
   padding: 2%;
 }
+button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  }
 </style>
 </head>
 <header>
-<!-- RSS feed link -->
-<a href="feed.xml"><img border="0" alt="Subscribe to What's New" src="https://i.imgur.com/fZIDSoj.png" width="100" height="100">
+<button>
+ <!-- RSS feed link. -->
+<a href="feed.xml"><img border="0" alt="Subscribe to What's New" src="https://i.imgur.com/fZIDSoj.png" width="30" height="30"></a>
+<!-- Code a website feed manually: http://rss-tutorial.com/rss-website-feed-manual.php -->
+</button>
 <!-- Menu component -->		
   <nav data-menu-component>
   <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
@@ -170,6 +178,7 @@ footer {
 <br>
  <h1>Pattern</h1>
  <h2>Using hypertext and styles for dynamic content. </h2>
+
 <br>  
 </header>
 <hr>
@@ -198,7 +207,7 @@ footer {
    <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank" rel="noopener noreferrer">MDN web docs</a>
    including tools checklist and setup Python server on localhost:8000 (19.09.2019)</li><br>
    <li>Alternative stylesheet
-    <a href="swiss.html" target="_blank" rel="noopener noreferrer">Swiss style</a>
+    <a href="https://en.wikipedia.org/wiki/International_Typographic_Style" rel="noopener noreferrer">Swiss style</a>
     VS Code and Firefox developer edition. (20.09.2019)</li><br>
     <li>The truth is, design work is <i>deliberation</i>.  It's the pursuit of the best solution to a given problem. 
     <a href="https://www.amazon.co.uk/Inclusive-Design-Patterns-Heydon-Pickering-ebook/dp/B01MAXK8XR" target="_blank" rel="noopener noreferrer">Inclusive Design Patterns</a> Heydon-Pickering-ebook (22.09.2019) 
@@ -235,6 +244,10 @@ footer {
  </p>
 </body>
 <br>
-<footer><a href="https://glitch.com/~gipsi-pattern" target="_blank"rel="noopener noreferrer">gipsi-pattern</a> is a web development project maintained and hosted on <a href="https://github.com/about" target="_blank"rel="noopener noreferrer">GitHub</a> and <a href="https://glitch.com" target="_blank" rel="noopener noreferrer">Glitch</a></footer>
+<footer><a href="https://glitch.com/~gipsi-pattern" target="_blank"rel="noopener noreferrer">gipsi-pattern</a> is a web development project maintained and hosted on <a href="https://github.com/about" target="_blank"rel="noopener noreferrer">GitHub</a> and <a href="https://glitch.com" target="_blank" rel="noopener noreferrer">Glitch</a>
+
+</footer>
 
 </html>
+
+
